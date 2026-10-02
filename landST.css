@@ -1,9 +1,10 @@
-goonbot {
+.goonbot {
   background-color: #000000;
   display: grid;
   place-items: center;
   min-height: 100vh;
 }
-larp {
+.larp {
   font-family: Courier New, monospace;
+  color: #139135;
 }
