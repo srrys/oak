@@ -6,7 +6,7 @@ function run() {
   const out = document.getElementById("output");
   console.log("fart McFartfart")
   if (userCode.split("\n")[0].includes("--help--")) {
-    out.innerHTML = "//HELP:  doc =           \n prints one line of code on the console \n endDoc"
+    out.innerHTML = "//HELP:  doc =           \n prints one line of code on the console \n endDoc <- closes doc."
   }
   else if (userCode.split("\n")[0].includes("doc  =") || userCode.split("\n").includes("doc=")) {
     error.style.display = "block";
@@ -17,3 +17,7 @@ function run() {
   }
 }
 console.log("aefaef");
+function goAwayError() {
+  error.innerHTML = "";
+  error.style.display = "none";
+}
