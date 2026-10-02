@@ -11,3 +11,8 @@ function coolio() {
     window.location.href = "home.html";
   }, 3150);
 }
+function run() {
+  console.log("running");
+  const userCode = document.getElementById("code").value;
+  document.getElementById("output")
+}
