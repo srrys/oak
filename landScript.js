@@ -5,6 +5,6 @@ function coolio() {
   }, 2000)
   setTimeout(() => {
     document.getElementById("text").innerHTML = "o a k "
-  },2000)
+  },5000)
   console.log("fin");
 }
