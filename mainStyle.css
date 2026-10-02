@@ -1,5 +1,6 @@
 body {
   background-color: #000000;
+  font-family: Courier New;
 }
 .heading {
   background-color: #139135;
@@ -10,7 +11,11 @@ body {
   place-items: center;
 }
 .ggh {
-  display: inline-block;
+  display:grid;
+  place-items: center;
   width: 600px
   height: 650PX;
+}
+.Ocont {
+  color: #ffffff;
 }
