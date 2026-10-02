@@ -5,6 +5,7 @@ function coolio() {
   }, 1000)
   setTimeout(() => {
     document.getElementById("text").innerHTML = "o a k "
-  },3500)
+  },2000)
   console.log("fin");
+  window.location.href = "home.html";
 }
