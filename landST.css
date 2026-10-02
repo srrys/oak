@@ -4,3 +4,6 @@ goonbot {
   place-items: center;
   min-height: 100vh;
 }
+larp {
+  font-family: Courier New, monospace;
+}
