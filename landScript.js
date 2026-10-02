@@ -2,9 +2,9 @@ function coolio() {
   console.log("test");
   setTimeout(() => {
     document.getElementById("text").innerHTML = "o a "
-  }, 2000)
+  }, 1000)
   setTimeout(() => {
     document.getElementById("text").innerHTML = "o a k "
-  },5000)
+  },3500)
   console.log("fin");
 }
