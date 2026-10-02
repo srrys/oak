@@ -9,3 +9,8 @@ body {
   display: grid;
   place-items: center;
 }
+.ggh {
+  display: inline-block;
+  width: 600px
+  height: 650PX;
+}
