@@ -6,4 +6,6 @@ body {
   display: inline-block;
   width: 100vw;
   height: 170px;
+  display: grid;
+  place-items: center;
 }
