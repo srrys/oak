@@ -1,6 +1,6 @@
 function coolio() {
-  document.getElementById("text").innerText + " a "
+  document.getElementById("text").innerHTML = "o a "
   setTimeout(() => {
-    document.getElementById("text").innerText + " k "
+    document.getElementById("text").innerHTML = "o a k "
   },2000)
 }
