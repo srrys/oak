@@ -6,5 +6,6 @@ function run() {
   console.log("fart McFartfart")
   if (userCode.split("\n")[0].includes("--help--")) {
     console.log("awesome")
+    document.getElementById("output").innerHTML = "//HELP:  doc = \n prints one line of code on the console \n endDoc"
   }
 }
