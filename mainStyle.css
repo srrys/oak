@@ -19,4 +19,10 @@ body {
 .Ocont {
   color: #ffffff;
 }
-.window
+.window {
+  background-image: url("windowimg.png");
+  background-color: #b0abab;
+  width: 250px;
+  height: 150px;
+  border: 2px solid #ffffff;
+}
