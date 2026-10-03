@@ -16,8 +16,8 @@ function run() {
     out.innerHTML + "output->" + userCode.split("\n")[1];
   }
 }
-console.log("aefaef");
 function goAwayError() {
   error.innerHTML = "";
   error.style.display = "none";
 }
+console.log("oak vers 1.1.0")
