@@ -12,7 +12,7 @@ function run() {
     error.style.display = "block";
     error.innerHTML = `Type error at line 1. ${userCode.split("\n")[0]} doc must have exactly one space from equal.`;
   }
-  else if (userCode.split("\n")[1] && userCode.split("\n")[1].includes("doc =") && userCode.split("\n")[2].includes("endDoc")) {
+  else if (userCode.split("\n")[1] && userCode.split("\n")[0].includes("doc =") && userCode.split("\n")[2].includes("endDoc")) {
     out.innerHTML = userCode.split("\n")[1];
   }
 }
