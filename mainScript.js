@@ -2,14 +2,15 @@ const error = document.getElementById("errors");
 error.style.display = "none";
 function run() {
   console.log("running");
-  let lineDos = "createNewWindow <- creates new window for graphics and movement."
+  let lineDos = "createNewWindow <- creates new window for graphics and movement.";
+  let lineTres = "endWindow <- removes window";
   const userCode = document.getElementById("input").value;
   const out = document.getElementById("output");
   const window = document.getElementById("window");
   const block = document.getElementById("blockA")
   console.log("fart McFartfart")
   if (userCode.split("\n")[0].includes("--help--")) {
-    out.innerHTML = "//HELP:  doc =           \n prints one line of code on the console \n endDoc <- closes doc." + lineDos;
+    out.innerHTML = "//HELP:  doc =           \n prints one line of code on the console \n endDoc <- closes doc." + lineDos + lineTres;
   }
   else if (userCode.split("\n")[0].includes("doc  =") || userCode.split("\n").includes("doc=")) {
     error.style.display = "block";
