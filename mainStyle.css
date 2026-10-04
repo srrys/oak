@@ -4,7 +4,8 @@ body {
 }
 .heading {
   background-color: #139135;
-  display: inline-block;
+  display: grid;
+  place-items: center;
   width: 100vw;
   height: 170px;
   display: grid;
