@@ -28,5 +28,7 @@ body {
   border: 2px solid #ffffff;
 }
 .redblock {
-  
+  background-color: red;
+  height: 45px;
+  width: 35px;
 }
