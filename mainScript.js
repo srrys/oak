@@ -29,4 +29,7 @@ function goAwayError() {
   error.innerHTML = "";
   error.style.display = "none";
 }
+function tutorial() {
+  userCode = "doc =\nhello world\nendDoc\ncreateNewWindow"
+}
 console.log("oak vers 1.1.0")
