@@ -5,6 +5,7 @@ function run() {
   let lineDos = "createNewWindow <- creates new window for graphics and movement."
   const userCode = document.getElementById("input").value;
   const out = document.getElementById("output");
+  const window = document.getElementById("window");
   console.log("fart McFartfart")
   if (userCode.split("\n")[0].includes("--help--")) {
     out.innerHTML = "//HELP:  doc =           \n prints one line of code on the console \n endDoc <- closes doc." + lineDos;
@@ -15,6 +16,9 @@ function run() {
   }
   else if (userCode.split("\n")[1] && userCode.split("\n")[0].includes("doc =") && userCode.split("\n")[2].includes("endDoc")) {
     out.innerHTML = "output-> " + userCode.split("\n")[1];
+  }
+  else if (userCode.split("\n")[0].includes("createNewWindow") || userCode.includes("createNewWindow")) {
+    window.style.display: block;
   }
 }
 function goAwayError() {
