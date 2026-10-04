@@ -18,9 +18,12 @@ function run() {
   }
   else if (userCode.split("\n")[1] && userCode.split("\n")[0].includes("doc =") && userCode.split("\n")[2].includes("endDoc")) {
     out.innerHTML = "output-> " + userCode.split("\n")[1];
+    if (userCode.split("\n")[3].includes("createNewWindow")) {
+      window.style.display = "block";
+    }
   }
-  else if (userCode.split("\n")[0].includes("createNewWindow") || userCode.split("\n")[3].includes("createNewWindow")) {
-    window.style.display = "block";
+  else if (userCode.split("\n")[0].includes("createNewWindow")) {
+    window.style.display = "block;"
   }
   else if (userCode.split("\n")[0].includes("createNewBlock") || userCode.split("\n")[3].includes("createNewBlock")) {
     block.style.display = "block";
