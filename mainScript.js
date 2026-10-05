@@ -24,6 +24,9 @@ function run() {
   }
   else if (userCode.split("\n")[0].includes("createNewWindow")) {
     window.style.display = "block;"
+    if (userCode.includes("destroyWindow")) {
+      window.style.display = "none";
+    }
   }
   else if (userCode.split("\n")[0].includes("createNewBlock") || userCode.split("\n")[3].includes("createNewBlock")) {
     block.style.display = "block";
