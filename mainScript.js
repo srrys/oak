@@ -2,8 +2,8 @@ const error = document.getElementById("errors");
 error.style.display = "none";
 function run() {
   console.log("running");
-  let lineDos = "createNewWindow <- creates new window for graphics and movement.";
-  let lineTres = "endWindow <- removes window";
+  let lineDos = "createNewWindow <- creates new window for graphics. ";
+  let lineTres = "destroyWindow <- removes window";
   const userCode = document.getElementById("input").value;
   const out = document.getElementById("output");
   const window = document.getElementById("window");
@@ -30,6 +30,11 @@ function run() {
   }
   else if (userCode.split("\n")[0].includes("createNewBlock") || userCode.split("\n")[3].includes("createNewBlock")) {
     block.style.display = "block";
+  }
+  else {
+    out.innerHTML  = "null";
+    error.style.display = "block";
+    error.innerHTML = "A statement is either not recognised or there is no code."
   }
 }
 function goAwayError() {
