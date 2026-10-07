@@ -21,6 +21,7 @@ body {
   color: #ffffff;
 }
 .window {
+  position: absolute;
   background-image: url("windowimg.png");
   background-color: #b0abab;
   width: 250px;
@@ -28,6 +29,9 @@ body {
   border: 2px solid #ffffff;
 }
 .redblock {
+  position: relative;
+  top: 0;
+  right: 0;
   background-color: red;
   height: 45px;
   width: 35px;
