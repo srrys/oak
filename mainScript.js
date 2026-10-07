@@ -51,4 +51,4 @@ function tutorial() {
   document.getElementById("input").innerHTML = "doc =\nhello world\nendDoc\ncreateNewWindow";
 }
 console.log("oak vers 1.1.0");
-console.log("open source code at github");
+colsole.log("test")
