@@ -20,7 +20,7 @@ function run() {
     error.innerHTML = `Type error. doc must have exactly one space from equal.`;
   }
   else if (lines.includes("doc =")) {
-    out.innerHTML = "output-> " + lines[lines.findIndex(item => item.includes("doc ="))];
+    out.innerHTML = "output-> " + lines[lines.findIndex(item => item.includes("doc =")) +1];
   }
   else if (userCode.split("\n").includes("createNewWindow")) {
     window.style.display = "block";
@@ -45,4 +45,4 @@ function tutorial() {
   document.getElementById("input").innerHTML = "doc =\nhello world\nendDoc\ncreateNewWindow";
 }
 console.log("oak vers 1.1.0");
-colsole.log("test")
+console.log("test")
