@@ -42,7 +42,7 @@ function goAwayError() {
   error.style.display = "none";
 }
 function signIn() {
-  if (user.innerHTML === "Sign in" && ) {
+  if (user.innerHTML === "Sign in" && localStorage.getItem("username") === "OakAdmin" localStorage.getItem("password")=== "W!nX86Exl,98'a!") {
     //placeholder
     console.log("goon");
   }
