@@ -19,11 +19,11 @@ function run() {
     error.style.display = "block";
     error.innerHTML = `Type error. doc must have exactly one space from equal.`;
   }
-  if (lines.includes("doc ="))
+  else if (lines.includes("doc =")) {
     out.innerHTML = "output-> " + lines[lines.findIndex(item => item.includes("doc ="))];
   }
   else if (userCode.split("\n").includes("createNewWindow")) {
-    window.style.display = "block;"
+    window.style.display = "block";
   }
   else if (userCode.includes("destroyWindow")) {
     window.style.display = "none";
