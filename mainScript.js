@@ -41,12 +41,6 @@ function goAwayError() {
   error.innerHTML = "";
   error.style.display = "none";
 }
-function signIn() {
-  if (user.innerHTML === "Sign in" && localStorage.getItem("username") === "OakAdmin" localStorage.getItem("password")=== "W!nX86Exl,98'a!") {
-    //placeholder
-    console.log("goon");
-  }
-}
 function tutorial() {
   document.getElementById("input").innerHTML = "doc =\nhello world\nendDoc\ncreateNewWindow";
 }
