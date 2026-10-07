@@ -43,7 +43,8 @@ function goAwayError() {
 }
 function signIn() {
   if (user.innerHTML === "Sign in" && ) {
-    
+    //placeholder
+    console.log("goon");
   }
 }
 function tutorial() {
