@@ -30,6 +30,7 @@ function run() {
   }
   if (userCode.includes("createNewButton") && userCode.includes("createNewUiWindow")) {
     buttonW.style.display = "block";
+  }
   if (userCode.includes("destroyWindow")) {
     windowE.style.display = "none";
   }
