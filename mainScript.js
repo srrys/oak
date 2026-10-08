@@ -42,8 +42,12 @@ function run() {
   if (userCode.includes("newButton =")) {
     buttonW.style.display = "block";
     const buttonTitle = lines[lines.findIndex(item => item.includes("newButton =")) + 1];
+    const titleTitle = lines[lines.findIndex(item => item.includes("newButton =")) + 2];
     if (buttonTitle) {
       buttonW.innerHTML = buttonTitle;
+    }
+    if (titleTitle) {
+      document.getElementById("titleA").innerHTML = titleTitle;
     }
   }
   if (lines.includes("doc =")) {
