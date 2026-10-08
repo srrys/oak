@@ -31,6 +31,9 @@ function run() {
   else if (userCode.includes("createNewBlock")) {
     block.style.display = "block";
   }
+  else if (userCode.includes("addButton")) {
+    button.style.display = "block;"
+  }
   else {
     out.innerHTML  = "null";
     error.style.display = "block";
