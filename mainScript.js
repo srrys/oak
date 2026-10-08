@@ -24,7 +24,7 @@ function run() {
   if (userCode.includes("createNewGameWindow")) {
     windowE.style.display = "block";
   }
-  if (useCode.includes("createNewUiWindow")) {
+  if (userCode.includes("createNewUiWindow")) {
     windowUI.style.display = "block";
     windowE.style.backgroundImage = "none";
   }
