@@ -54,4 +54,12 @@ h2 {
 .Bwin {
   opacity: 0.8;
   display: none;
+  position: relative;
+}
+.windowUI {
+  display: none;
+  width: 300px;
+  height: 150px;
+  background-color: #b0abab;
+  position: absolute;
 }
