@@ -38,7 +38,7 @@ function run() {
     blockE.style.display = "block";
   }
   if (userCode.includes("newButton =")) {
-    button.style.display = "block";
+    buttonW.style.display = "block";
     buttonTitle = lines[lines.findIndex(item => item.includes("newButton =")) + 1];
     if (buttonTitle) {
       button.innerHTML = buttonTitle;
