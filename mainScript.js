@@ -23,6 +23,7 @@ function run() {
   }
   if (userCode.includes("createNewGameWindow")) {
     windowE.style.display = "block";
+    console.log("created;")
   }
   if (userCode.includes("createNewUiWindow")) {
     windowUI.style.display = "block";
