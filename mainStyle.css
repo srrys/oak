@@ -21,6 +21,7 @@ body {
   color: #ffffff;
 }
 .window {
+  display: none;
   position: absolute;
   background-image: url("windowimg.png");
   background-color: #b0abab;
