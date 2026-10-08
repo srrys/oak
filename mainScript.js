@@ -72,7 +72,7 @@ function goAwayError() {
   error.style.display = "none";
 }
 function tutorial() {
-  document.getElementById("input").value = "doc =\nhello world\nendDoc\ncreateNewWindow";
+  document.getElementById("input").value = "createNewUiWindow \nnewTitle =\nExample Interface\ndoc =\nhello world\nendDoc";
 }
 console.log("oak vers 1.1.0");
 console.log("goonbot");
