@@ -12,6 +12,7 @@ function run() {
   const blockE = document.getElementById("blockA");
   const signedInDude = document.getElementById("");
   const buttonW = document.getElementById("buttonA");
+  const windowUI = document.getElementById("UIwindow");
   console.log("fart McFartfart");
   if (userCode.split("\n")[0].includes("--help--")) {
     out.innerHTML = "//HELP:  doc =           \n prints one line of code on the console \n endDoc <- closes doc." + lineDos + lineTres;
@@ -20,10 +21,14 @@ function run() {
     error.style.display = "block";
     error.innerHTML = `Type error. doc must have exactly one space from equal.`;
   }
-  if (userCode.includes("createNewWindow")) {
+  if (userCode.includes("createNewGameWindow")) {
     windowE.style.display = "block";
   }
-  if (userCode.includes("createNewButton") && userCode.includes("createNewWindow")) {
+  if (useCode.includes("createNewUiWindow")) {
+    windowUI.style.display = "block";
+    windowE.style.backgroundImage = "none";
+  }
+  if (userCode.includes("createNewButton") && userCode.includes("createNewUiWindow")) {
     buttonW.style.display = "block";
   if (userCode.includes("destroyWindow")) {
     windowE.style.display = "none";
