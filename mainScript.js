@@ -59,9 +59,8 @@ function run() {
     error.innerHTML = "A statement is either not recognised or there is no code.";
   }
 }
-const userCoded = document.getElementById("input").value;
 function save() {
-  localStorage.setItem("project", userCoded);
+  localStorage.setItem("project", document.getElementById("input").value);
 }
 function load() {
   let project = localStorage.getItem("project");
@@ -76,3 +75,8 @@ function tutorial() {
 }
 console.log("oak vers 1.1.0");
 console.log("goonbot");
+function clicked() {
+  if (lines[lines.findIndex(item => item.includes(newButton)) + 2].includes("doc =")) {
+    console.log("test");
+  }
+}
