@@ -15,23 +15,23 @@ function run() {
   if (userCode.split("\n")[0].includes("--help--")) {
     out.innerHTML = "//HELP:  doc =           \n prints one line of code on the console \n endDoc <- closes doc." + lineDos + lineTres;
   }
-  else if (userCode.includes("doc  =") || userCode.includes("doc=")) {
+  if (userCode.includes("doc  =") || userCode.includes("doc=")) {
     error.style.display = "block";
     error.innerHTML = `Type error. doc must have exactly one space from equal.`;
   }
-  else if (userCode.includes("createNewWindow")) {
+  if (userCode.includes("createNewWindow")) {
     windowE.style.display = "block";
   }
-  else if (userCode.includes("destroyWindow")) {
+  if (userCode.includes("destroyWindow")) {
     windowE.style.display = "none";
   }
-  else if (userCode.includes("createNewBlock")) {
+  if (userCode.includes("createNewBlock")) {
     blockE.style.display = "block";
   }
-  else if (userCode.includes("addButton")) {
+  if (userCode.includes("addButton")) {
     button.style.display = "block;"
   }
-  else if (lines.includes("doc =")) {
+  if (lines.includes("doc =")) {
     out.innerHTML = "output-> " + lines[lines.findIndex(item => item.includes("doc =")) +1];
   }
   else {
