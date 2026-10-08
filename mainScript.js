@@ -59,6 +59,13 @@ function run() {
     error.innerHTML = "A statement is either not recognised or there is no code.";
   }
 }
+function save() {
+  localStorage.setItem("project", userCode);
+}
+function load() {
+  let project = localStorage.getItem("project");
+  userCode.innerHTML = project;
+}
 function goAwayError() {
   error.innerHTML = "";
   error.style.display = "none";
@@ -67,4 +74,4 @@ function tutorial() {
   document.getElementById("input").value = "doc =\nhello world\nendDoc\ncreateNewWindow";
 }
 console.log("oak vers 1.1.0");
-console.log("test")
+console.log("test");
