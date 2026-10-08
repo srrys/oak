@@ -40,7 +40,7 @@ function run() {
   if (userCode.includes("createNewBlock")) {
     blockE.style.display = "block";
   }
-  if (userCode.includes("newButton =") and userCode.includes("endButton')) {
+  if (userCode.includes("newButton =") && userCode.includes("endButton')) {
     buttonW.style.display = "block";
     const buttonTitle = lines[lines.findIndex(item => item.includes("newButton =")) + 1];
     if (buttonTitle) {
