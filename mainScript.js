@@ -8,8 +8,8 @@ function run() {
   const userCode = document.getElementById("input").value;
   const lines = userCode.split("\n");
   const out = document.getElementById("output");
-  const window = document.getElementById("window");
-  const block = document.getElementById("blockA");
+  const windowE = document.getElementById("window");
+  const blockE = document.getElementById("blockA");
   const signedInDude = document.getElementById("");
   console.log("fart McFartfart")
   if (userCode.split("\n")[0].includes("--help--")) {
@@ -23,13 +23,13 @@ function run() {
     out.innerHTML = "output-> " + lines[lines.findIndex(item => item.includes("doc =")) +1];
   }
   else if (userCode.includes("createNewWindow")) {
-    window.style.display = "block";
+    windowE.style.display = "block";
   }
   else if (userCode.includes("destroyWindow")) {
-    window.style.display = "none";
+    windowE.style.display = "none";
   }
   else if (userCode.includes("createNewBlock")) {
-    block.style.display = "block";
+    blockE.style.display = "block";
   }
   else if (userCode.includes("addButton")) {
     button.style.display = "block;"
