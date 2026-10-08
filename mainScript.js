@@ -74,4 +74,3 @@ function tutorial() {
   document.getElementById("input").value = "doc =\nhello world\nendDoc\ncreateNewWindow";
 }
 console.log("oak vers 1.1.0");
-console.log("test");
