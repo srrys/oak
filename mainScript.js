@@ -59,8 +59,9 @@ function run() {
     error.innerHTML = "A statement is either not recognised or there is no code.";
   }
 }
+const userCoded = document.getElementById("input").value;
 function save() {
-  localStorage.setItem("project", userCode);
+  localStorage.setItem("project", userCoded);
 }
 function load() {
   let project = localStorage.getItem("project");
