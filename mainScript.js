@@ -39,7 +39,7 @@ function run() {
   }
   if (userCode.includes("newButton =")) {
     buttonW.style.display = "block";
-    buttonTitle = lines[lines.findIndex(item => item.includes("newButton =")) + 1];
+    const buttonTitle = lines[lines.findIndex(item => item.includes("newButton =")) + 1];
     if (buttonTitle) {
       button.innerHTML = buttonTitle;
     }
