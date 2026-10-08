@@ -34,10 +34,10 @@ function run() {
   if (lines.includes("doc =")) {
     out.innerHTML = "output-> " + lines[lines.findIndex(item => item.includes("doc =")) +1];
   }
-  else {
-    out.innerHTML  = "null";
+  if (!lines) {
+    out.innerHTML  = "output-> //null";
     error.style.display = "block";
-    error.innerHTML = "A statement is either not recognised or there is no code."
+    error.innerHTML = "A statement is either not recognised or there is no code.";
   }
 }
 function goAwayError() {
