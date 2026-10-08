@@ -11,6 +11,7 @@ function run() {
   const windowE = document.getElementById("window");
   const blockE = document.getElementById("blockA");
   const signedInDude = document.getElementById("");
+  const buttonW = document.getElementById("buttonA");
   console.log("fart McFartfart");
   if (userCode.split("\n")[0].includes("--help--")) {
     out.innerHTML = "//HELP:  doc =           \n prints one line of code on the console \n endDoc <- closes doc." + lineDos + lineTres;
@@ -22,6 +23,8 @@ function run() {
   if (userCode.includes("createNewWindow")) {
     windowE.style.display = "block";
   }
+  if (userCode.includes("createNewButton") && userCode.includes("createNewWindow")) {
+    buttonW.style.display = "block";
   if (userCode.includes("destroyWindow")) {
     windowE.style.display = "none";
   }
