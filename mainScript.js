@@ -36,8 +36,12 @@ function run() {
   if (userCode.includes("createNewBlock")) {
     blockE.style.display = "block";
   }
-  if (userCode.includes("addButton")) {
-    button.style.display = "block;"
+  if (userCode.includes("newButton =")) {
+    button.style.display = "block";
+    buttonTitle = lines[lines.findIndex(item => item.includes("newButton =")) + 1];
+    if (buttonTitle) {
+      button.innerHTML = buttonTitle;
+    }
   }
   if (lines.includes("doc =")) {
     out.innerHTML = "output-> " + lines[lines.findIndex(item => item.includes("doc =")) +1];
