@@ -65,7 +65,7 @@ function save() {
 }
 function load() {
   let project = localStorage.getItem("project");
-  userCode.innerHTML = project;
+  document.getElementById("input").innerHTML = project;
 }
 function goAwayError() {
   error.innerHTML = "";
