@@ -6,6 +6,6 @@
 }
 .larp {
   font-family: Courier New, monospace;
-  color: #139135;
+  color: linear-gradient(to right, #139135, lightgreen);
   font-size: 45px;
 }
