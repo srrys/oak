@@ -11,7 +11,7 @@ function run() {
   const windowE = document.getElementById("window");
   const blockE = document.getElementById("blockA");
   const signedInDude = document.getElementById("");
-  console.log("fart McFartfart")
+  console.log("fart McFartfart");
   if (userCode.split("\n")[0].includes("--help--")) {
     out.innerHTML = "//HELP:  doc =           \n prints one line of code on the console \n endDoc <- closes doc." + lineDos + lineTres;
   }
