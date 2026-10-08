@@ -43,7 +43,7 @@ function run() {
     buttonW.style.display = "block";
     const buttonTitle = lines[lines.findIndex(item => item.includes("newButton =")) + 1];
     if (buttonTitle) {
-      button.innerHTML = buttonTitle;
+      buttonW.innerHTML = buttonTitle;
     }
   }
   if (lines.includes("doc =")) {
