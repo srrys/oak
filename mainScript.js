@@ -13,6 +13,7 @@ function run() {
   const signedInDude = document.getElementById("");
   const buttonW = document.getElementById("buttonA");
   const windowUI = document.getElementById("UIwindow");
+  const titleTitle = lines[lines.findIndex(item => item.includes("newTitle =")) + 1];
   console.log("fart McFartfart");
   if (userCode.split("\n")[0].includes("--help--")) {
     out.innerHTML = "//HELP:  doc =           \n prints one line of code on the console \n endDoc <- closes doc." + lineDos + lineTres;
@@ -42,13 +43,12 @@ function run() {
   if (userCode.includes("newButton =") and userCode.includes("endButton')) {
     buttonW.style.display = "block";
     const buttonTitle = lines[lines.findIndex(item => item.includes("newButton =")) + 1];
-    const titleTitle = lines[lines.findIndex(item => item.includes("newButton =")) + 2];
     if (buttonTitle) {
       buttonW.innerHTML = buttonTitle;
     }
-    if (titleTitle) {
-      document.getElementById("titleA").innerHTML = titleTitle;
-    }
+  }
+  if (titleTitle) {
+    document.getElementById("titleA").innerHTML = titleTitle;
   }
   if (lines.includes("doc =")) {
     out.innerHTML = "output-> " + lines[lines.findIndex(item => item.includes("doc =")) +1];
