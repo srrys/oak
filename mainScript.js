@@ -45,7 +45,7 @@ function goAwayError() {
   error.style.display = "none";
 }
 function tutorial() {
-  document.getElementById("input").innerHTML = "doc =\nhello world\nendDoc\ncreateNewWindow";
+  document.getElementById("input").value = "doc =\nhello world\nendDoc\ncreateNewWindow";
 }
 console.log("oak vers 1.1.0");
 console.log("test")
