@@ -22,7 +22,7 @@ function run() {
   else if (lines.includes("doc =")) {
     out.innerHTML = "output-> " + lines[lines.findIndex(item => item.includes("doc =")) +1];
   }
-  else if (userCode.split("\n").includes("createNewWindow")) {
+  else if (userCode.includes("createNewWindow")) {
     window.style.display = "block";
   }
   else if (userCode.includes("destroyWindow")) {
