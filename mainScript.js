@@ -23,7 +23,8 @@ function run() {
   }
   if (userCode.includes("createNewGameWindow")) {
     windowE.style.display = "block";
-    console.log("created;")
+    console.log("created");
+    console.log("asdasd");
   }
   if (userCode.includes("createNewUiWindow")) {
     windowUI.style.display = "block";
