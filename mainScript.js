@@ -51,7 +51,12 @@ function run() {
     document.getElementById("titleA").innerHTML = titleTitle;
   }
   if (lines.includes("doc =")) {
-    out.innerHTML = "output-> " + lines[lines.findIndex(item => item.includes("doc =")) +1];
+    if (lines.includes("newButton =") && lines.includes("endButton")) {
+      console.log("-");
+    }
+    else {
+      out.innerHTML = "output-> " + lines[lines.findIndex(item => item.includes("doc =")) +1];
+    }
   }
   if (lines.includes("GravityEnabled")) {
     out.textContent += " //Gravity Enabled";
@@ -77,12 +82,12 @@ function goAwayError() {
   error.style.display = "none";
 }
 function tutorial() {
-  document.getElementById("input").value = "createNewUiWindow \nnewTitle =\nExample Interface\ndoc =\nhello world\nendDoc";
+  document.getElementById("input").value = "createNewUiWindow \nnewTitle =\nExample Interface \nnewButton = \nSay hello\ndoc =\nhello\nendDoc";
 }
 console.log("oak vers 1.1.0");
 console.log("goonbot");
 function clicked() {
   if (lines[lines.findIndex(item => item.includes(newButton)) + 2].includes("doc =")) {
-    console.log("nande");
+    out.innerHTML = "output-> " + 
   }
 }
