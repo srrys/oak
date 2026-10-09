@@ -55,6 +55,9 @@ function run() {
   }
   if (lines.includes("GravityEnabled")) {
     out.textContent += " //Gravity Enabled";
+    if (blockE.style.top === "0px") {
+      blockE.style.top = (blockE.offsetTop + 5) + "px";
+    }
   }  
   if (!lines) {
     out.innerHTML  = "output-> //null";
