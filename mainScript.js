@@ -1,6 +1,7 @@
 const error = document.getElementById("errors");
 error.style.display = "none";
 const user = document.getElementById("username");
+const lines = userCode.split("\n");
 function run() {
   console.log("running");
   let lineDos = "createNewWindow <- creates new window for graphics. ";
