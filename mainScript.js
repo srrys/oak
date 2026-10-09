@@ -87,7 +87,7 @@ function tutorial() {
 console.log("oak vers 1.1.0");
 console.log("goonbot");
 function clicked() {
-  if (lines[lines.findIndex(item => item.includes(newButton)) + 2].includes("doc =")) {
-    out.innerHTML = "output-> " + 
+  if (lines[lines.findIndex(item => item.includes("newButton")) + 2].includes("doc =")) {
+    out.innerHTML = "output-> " + lines[lines.findIndex(item => item.includes("newButton")) + 3];
   }
 }
