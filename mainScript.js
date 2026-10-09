@@ -89,6 +89,6 @@ console.log("goonbot");
 function clicked() {
   const lines = document.getElementById("input").value.split("\n");
   if (lines[lines.findIndex(item => item.includes("newButton")) + 2].includes("doc =")) {
-    out.innerHTML = "output-> " + lines[lines.findIndex(item => item.includes("newButton")) + 3];
+    document.getElementById("output").innerHTML = "output-> " + lines[lines.findIndex(item => item.includes("newButton")) + 3];
   }
 }
