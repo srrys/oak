@@ -1,7 +1,6 @@
 const error = document.getElementById("errors");
 error.style.display = "none";
 const user = document.getElementById("username");
-const lines = document.getElementById("input").value.split("\n");
 function run() {
   console.log("running");
   let lineDos = "createNewWindow <- creates new window for graphics. ";
@@ -88,6 +87,7 @@ function tutorial() {
 console.log("oak vers 1.1.0");
 console.log("goonbot");
 function clicked() {
+  const lines = document.getElementById("input").value.split("\n");
   if (lines[lines.findIndex(item => item.includes("newButton")) + 2].includes("doc =")) {
     out.innerHTML = "output-> " + lines[lines.findIndex(item => item.includes("newButton")) + 3];
   }
