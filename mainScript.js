@@ -53,6 +53,9 @@ function run() {
   if (lines.includes("doc =")) {
     out.innerHTML = "output-> " + lines[lines.findIndex(item => item.includes("doc =")) +1];
   }
+  if (lines.includes("GravityEnabled")) {
+    out.textContent += " //Gravity Enabled";
+  }  
   if (!lines) {
     out.innerHTML  = "output-> //null";
     error.style.display = "block";
@@ -77,6 +80,6 @@ console.log("oak vers 1.1.0");
 console.log("goonbot");
 function clicked() {
   if (lines[lines.findIndex(item => item.includes(newButton)) + 2].includes("doc =")) {
-    console.log("test");
+    console.log("nande");
   }
 }
