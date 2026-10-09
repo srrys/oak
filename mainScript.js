@@ -92,3 +92,6 @@ function clicked() {
     document.getElementById("output").innerHTML = "output-> " + lines[lines.findIndex(item => item.includes("newButton")) + 3];
   }
 }
+function gotonews() {
+  window.location.href = "news.html";
+}
