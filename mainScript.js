@@ -1,8 +1,6 @@
 const error = document.getElementById("errors");
 error.style.display = "none";
 const user = document.getElementById("username");
-let simpLang = "false";
-const moveBot = "false";
 function run() {
   console.log("running");
   let lineDos = "createNewWindow <- creates new window for graphics. ";
@@ -19,7 +17,6 @@ function run() {
   localStorage.setItem("simpLang1", "false");
   console.log("fart McFartfart");
   if (localStorage.getItem("simpLang1") === "true") {
-    let simpLang = "true";
     console.log("simpLang Enabled.");
   }
   if (userCode.split("\n")[0].includes("--help--")) {
