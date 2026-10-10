@@ -71,6 +71,9 @@ h2 {
   animation-name: pullDown;
   animation-duration: 1.9s;
 }
+.normWG {
+  top: 105px;
+}
 @keyframes pullDown {
   0% {top: 0px;}
   50% {top: 52px;}
