@@ -62,12 +62,12 @@ function run() {
   }
   if (lines.includes("GravityEnabled") && blockE.style.display === "block") {
     out.textContent += " //Gravity Enabled.";
-    if (blockE.style.top === "0px") {
+    if (blockE.style.top === "") {
       blockE.classList.add("grav");
       setTimeout(() => {
         blockE.classList.remove("grav");
         blockE.classList.add("normWG");
-      }, 2000);
+      }, 1000);
     }
   }  
   if (lines.length === 0) {
