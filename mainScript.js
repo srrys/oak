@@ -13,9 +13,12 @@ function run() {
   const buttonW = document.getElementById("buttonA");
   const windowUI = document.getElementById("UIwindow");
   const titleTitle = lines[lines.findIndex(item => item.includes("newTitle =")) + 1];
+  const movementP = document.getElementById("moveMP");
   console.log("fart McFartfart");
-  if (localStorage.getItem("simpLang1") === "true") {
-    console.log("simpLang Enabled.");
+  if (localStorage.getItem("moveBot1") === "true") {
+    if (lines.includes("addMovementPanel")) {
+      movementP.style.display = "block";
+    }
   }
   if (userCode.split("\n")[0].includes("--help--")) {
     out.innerHTML = "//HELP:  doc =           \n prints one line of code on the console \n endDoc <- closes doc." + lineDos + lineTres;
