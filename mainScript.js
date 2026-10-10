@@ -14,7 +14,6 @@ function run() {
   const buttonW = document.getElementById("buttonA");
   const windowUI = document.getElementById("UIwindow");
   const titleTitle = lines[lines.findIndex(item => item.includes("newTitle =")) + 1];
-  localStorage.setItem("simpLang1", "false");
   console.log("fart McFartfart");
   if (localStorage.getItem("simpLang1") === "true") {
     console.log("simpLang Enabled.");
@@ -68,10 +67,13 @@ function run() {
       blockE.style.top = (blockE.offsetTop + 5) + "px";
     }
   }  
-  if (!lines) {
+  if (lines.length === 0) {
     out.innerHTML  = "output-> //null";
     error.style.display = "block";
     error.innerHTML = "A statement is either not recognised or there is no code.";
+  }
+  if (lines.length > 20) {
+    out.innerHTML = "Greater than 20 lines."
   }
 }
 function save() {
