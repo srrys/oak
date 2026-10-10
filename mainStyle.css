@@ -32,8 +32,8 @@ body {
 }
 .redblock {
   position: relative;
-  top: 0;
-  right: 0;
+  top: 0px;
+  right: 0px;
   background-color: red;
   height: 45px;
   width: 35px;
