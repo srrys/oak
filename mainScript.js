@@ -83,7 +83,7 @@ function goAwayError() {
   error.style.display = "none";
 }
 function tutorial() {
-  document.getElementById("input").value = "createNewUiWindow \nnewTitle =\nExample Interface \nnewButton = \nSay hello\ndoc =\nhello\nendDoc";
+  document.getElementById("input").value = "createNewUiWindow \nnewTitle =\nExample Interface \nnewButton = \nSay hello\ndoc =\nhello\nendDoc\n endButton";
 }
 console.log("oak vers 1.1.0");
 console.log("goonbot");
