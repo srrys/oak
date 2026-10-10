@@ -1,5 +1,10 @@
 const error = document.getElementById("errors");
-error.style.display = "none";
+if (window.location.href === "home.html") {
+  error.style.display = "none";
+}
+else {
+  window.location.href = "news.html";
+}
 const user = document.getElementById("username");
 function run() {
   console.log("running");
