@@ -67,3 +67,12 @@ h2 {
 .errors {
   display: none;
 }
+.grav {
+  animation-name: pullDown;
+  animation-duration: 1.9s;
+}
+@keyframes pullDown {
+  0% {top: 0px;}
+  50% {top: 52px;}
+  100% {top: 105px;}
+}
