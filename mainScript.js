@@ -110,3 +110,4 @@ function SimplangDL() {
 function MovebotDL() {
   localStorage.setItem("moveBot1", "true")
 }
+console.log("testing again 😢");
