@@ -84,6 +84,8 @@ h2 {
   100% {top: 105px;}
 }
 .mp {
+  width: 45;
+  height: 46;
   display: none;
   opacity: 0.5;
   top: 105px;
