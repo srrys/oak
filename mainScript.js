@@ -2,6 +2,7 @@ const error = document.getElementById("errors");
 const user = document.getElementById("username");
 function run() {
   console.log("running");
+  return;
   let lineDos = "createNewWindow <- creates new window for graphics. ";
   let lineTres = "destroyWindow <- removes window";
   const userCode = document.getElementById("input").value;
