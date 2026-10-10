@@ -1,6 +1,5 @@
 const error = document.getElementById("errors");
 const user = document.getElementById("username");
-console.log("test");
 function run() {
   console.log("running");
   let lineDos = "createNewWindow <- creates new window for graphics. ";
@@ -107,4 +106,7 @@ function gotonews() {
 }
 function SimplangDL() {
   localStorage.setItem("simpLang1", "true");
+}
+function MovebotDL() {
+  localStorage.setItem("moveBot1", "true")
 }
