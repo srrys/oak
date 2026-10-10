@@ -64,3 +64,6 @@ h2 {
   background-color: #b0abab;
   position: absolute;
 }
+.errors {
+  display: none;
+}
