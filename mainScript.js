@@ -61,7 +61,7 @@ function run() {
       out.innerHTML = "output-> " + lines[lines.findIndex(item => item.includes("doc =")) +1];
     }
   }
-  if (lines.includes("GravityEnabled") && blockE.style.display === "block") {
+  if (lines.includes("GravityEnabled") && blockE.style.display === "") {
     out.textContent += " //Gravity Enabled.";
     if (blockE.style.top === "0px") {
       blockE.classList.add("grav");
