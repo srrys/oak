@@ -16,7 +16,7 @@ function run() {
   const buttonW = document.getElementById("buttonA");
   const windowUI = document.getElementById("UIwindow");
   const titleTitle = lines[lines.findIndex(item => item.includes("newTitle =")) + 1];
-  localStorage.setItem("simpLang1", false);
+  localStorage.setItem("simpLang1", "false");
   console.log("fart McFartfart");
   if (localStorage.getItem("simpLang1") === "true") {
     let simpLang = "true";
@@ -103,6 +103,5 @@ function gotonews() {
   window.location.href = "news.html";
 }
 function SimplangDL() {
-  localStorage.setItem("simplang1", "true");
-  
+  localStorage.setItem("simpLang1", "true");
 }
