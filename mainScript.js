@@ -2,6 +2,7 @@ const error = document.getElementById("errors");
 error.style.display = "none";
 const user = document.getElementById("username");
 const simpLang = false;
+const moveBot = false;
 function run() {
   console.log("running");
   let lineDos = "createNewWindow <- creates new window for graphics. ";
@@ -15,7 +16,11 @@ function run() {
   const buttonW = document.getElementById("buttonA");
   const windowUI = document.getElementById("UIwindow");
   const titleTitle = lines[lines.findIndex(item => item.includes("newTitle =")) + 1];
+  localStorage.setItem("simpLang1", false);
   console.log("fart McFartfart");
+  if (localStorage.getItem("simpLang1") === true) {
+    console.log("simpLang Enabled.");
+  }
   if (userCode.split("\n")[0].includes("--help--")) {
     out.innerHTML = "//HELP:  doc =           \n prints one line of code on the console \n endDoc <- closes doc." + lineDos + lineTres;
   }
